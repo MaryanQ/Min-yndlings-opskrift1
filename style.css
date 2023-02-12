@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(179, 179, 172);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  border: 3px solid rgb(199, 120, 120);
+  font-family: "Cambria, Cochin, Georgia, Times, " Times New Roman ", serif";
+  background-color: black;
+  color: white;
+  font-size: 60px;
+}
+h3 {
+  color: white;
+  font-size: 12.5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 2.5;
+  text-align: center;
+}
+nav {
+  background-color: rgba(73, 0, 0, 0.329);
+  color: rgb(180, 40, 40);
+  line-height: 0.5;
+  padding: 5px;
+}
+
+aside {
+  background-color: grey;
+  color: beige;
+  padding: 10px;
+  line-height: 2.5;
+}
+about {
+  background-color: rgb(107, 56, 56);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 2.5;
+}
+
+footer {
+  background-color: beige;
+  color: rgb(132, 30, 30);
+  line-height: 2.5;
+  padding: 10px;
+}
+
+.image.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+      "header"
+      "nav nav"
+      "article aside"
+      "about footer";
+    display: grid;
+  }
+}
